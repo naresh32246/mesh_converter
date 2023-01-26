@@ -1,0 +1,9 @@
+<p>mesh-converter works!</p>
+<div>
+    <h1>
+      Welcome to Novineer!
+    </h1>
+    <input type="file" (change)="uploadMesh($event)" #meshFile>
+<button (click)="convertToSTL()">Convert to STL</button>
+<a *ngIf="convertedSTL" [href]="convertedSTL" download>Download Converted STL</a>
+  </div>
